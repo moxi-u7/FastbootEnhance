@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>Информация о версии</value>
+  </data>
+  <data name="app_name" xml:space="preserve">
+    <value>Fastboot Enhance</value>
+  </data>
+  <data name="author" xml:space="preserve">
+    <value>Разработчик: LibXZR @ akr-developers.com</value>
+  </data>
+  <data name="disabled" xml:space="preserve">
+    <value>Отключено</value>
+  </data>
+  <data name="enabled" xml:space="preserve">
+    <value>Активен</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="fastboot_0_size" xml:space="preserve">
+    <value>Неизвестно</value>
+  </data>
+  <data name="fastboot_basic_prop" xml:space="preserve">
+    <value>Базовая информация</value>
+  </data>
+  <data name="fastboot_cancel_update" xml:space="preserve">
+    <value>Отменить ожидаемое обновление</value>
+  </data>
+  <data name="fastboot_choose_device" xml:space="preserve">
+    <value>Выберите устройство:</value>
+  </data>
+  <data name="fastboot_cow_exist_str0" xml:space="preserve">
+    <value>Имеются виртуальные временные разделы A/B</value>
+  </data>
+  <data name="fastboot_cow_exist_str1" xml:space="preserve">
+    <value>Поскольку в устройстве существуют раздел другого слота, созданные при обновлении виртуального A/B, принудительное продолжение работы может привести к тому, что устройство превратится в "кирпич" из-за недостаточного места в суперразделе</value>
+  </data>
+  <data name="fastboot_cow_exist_str2" xml:space="preserve">
+    <value>(Устранить это предупреждение можно, удалив вручную временный раздел заканчивающийся на 'COW', если виртуальный A/B не обновляется).</value>
+  </data>
+  <data name="fastboot_cow_exist_str3" xml:space="preserve">
+    <value>Вы хотите продолжить?</value>
+  </data>
+  <data name="fastboot_create_dynamic_partition" xml:space="preserve">
+    <value>Создать новый логический раздел</value>
+  </data>
+  <data name="fastboot_current_device" xml:space="preserve">
+    <value>Текущее устройство: </value>
+  </data>
+  <data name="fastboot_current_slot" xml:space="preserve">
+    <value>Текущий слот</value>
+  </data>
+  <data name="fastboot_device" xml:space="preserve">
+    <value>Кодовое имя устройства</value>
+  </data>
+  <data name="fastboot_device_name" xml:space="preserve">
+    <value>Режим</value>
+  </data>
+  <data name="fastboot_device_not_exist" xml:space="preserve">
+    <value>Устройство не обнаружено</value>
+  </data>
+  <data name="fastboot_enhance" xml:space="preserve">
+    <value>Fastboot</value>
+  </data>
+  <data name="fastboot_expand_dynamic_partition" xml:space="preserve">
+    <value>Расширение логических разделов</value>
+  </data>
+  <data name="fastboot_filter_by_partition_name" xml:space="preserve">
+    <value>Фильтр по имени раздела:</value>
+  </data>
+  <data name="fastboot_flash_payload" xml:space="preserve">
+    <value>Прошить Payload.bin</value>
+  </data>
+  <data name="fastboot_ignore_unknown" xml:space="preserve">
+    <value>Игнорировать неизвестные разделы</value>
+  </data>
+  <data name="fastboot_is_userspace" xml:space="preserve">
+    <value>Режим fastbootd</value>
+  </data>
+  <data name="fastboot_not_support_multiselect" xml:space="preserve">
+    <value>С помощью этой операции нельзя выбрать несколько разделов.</value>
+  </data>
+  <data name="fastboot_only_logical" xml:space="preserve">
+    <value>Эта операция возможна только для логических разделов.</value>
+  </data>
+  <data name="fastboot_partition_action" xml:space="preserve">
+    <value>Действие</value>
+  </data>
+  <data name="fastboot_partition_action_create" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="fastboot_partition_action_delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="fastboot_partition_action_erase" xml:space="preserve">
+    <value>Стереть</value>
+  </data>
+  <data name="fastboot_partition_action_flash" xml:space="preserve">
+    <value>Прошить</value>
+  </data>
+  <data name="fastboot_partition_action_resize" xml:space="preserve">
+    <value>Изменить размер</value>
+  </data>
+  <data name="fastboot_partition_is_dynamic" xml:space="preserve">
+    <value>Логический раздел</value>
+  </data>
+  <data name="fastboot_partition_name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="fastboot_partition_name_empty" xml:space="preserve">
+    <value>Имя раздела пустое.</value>
+  </data>
+  <data name="fastboot_partition_size" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="fastboot_partition_size_b" xml:space="preserve">
+    <value>Размер (B)</value>
+  </data>
+  <data name="fastboot_partition_size_empty" xml:space="preserve">
+    <value>Размер раздела пустой.</value>
+  </data>
+  <data name="fastboot_partition_size_invalid" xml:space="preserve">
+    <value>Некорректный размер раздела.</value>
+  </data>
+  <data name="fastboot_partition_size_unable_shrink" xml:space="preserve">
+    <value>Размер раздела не может быть уменьшен. Можно удалить раздел, а затем создать его заново</value>
+  </data>
+  <data name="fastboot_partition_table" xml:space="preserve">
+    <value>Разделы</value>
+  </data>
+  <data name="fastboot_prop_name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="fastboot_prop_value" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="fastboot_reboot_bootloader" xml:space="preserve">
+    <value>Перезагрузка в bootloader</value>
+  </data>
+  <data name="fastboot_reboot_fastbootd" xml:space="preserve">
+    <value>Перезагрузка в fastbootd</value>
+  </data>
+  <data name="fastboot_reboot_recovery" xml:space="preserve">
+    <value>Перезагрузка в рекавери</value>
+  </data>
+  <data name="fastboot_reboot_system" xml:space="preserve">
+    <value>Перезагрузка в систему</value>
+  </data>
+  <data name="fastboot_remove_device" xml:space="preserve">
+    <value>Отключить</value>
+  </data>
+  <data name="fastboot_seamless_update" xml:space="preserve">
+    <value>Присутствие поддержки бесшовных обновлений</value>
+  </data>
+  <data name="fastboot_secure_boot" xml:space="preserve">
+    <value>Secure Boot</value>
+  </data>
+  <data name="fastboot_serial_num" xml:space="preserve">
+    <value>Серийный номер</value>
+  </data>
+  <data name="fastboot_setactive_a" xml:space="preserve">
+    <value>Переключиться на слот A</value>
+  </data>
+  <data name="fastboot_setactive_b" xml:space="preserve">
+    <value>Переключиться на слот B</value>
+  </data>
+  <data name="fastboot_show_logs" xml:space="preserve">
+    <value>Посмотреть логи</value>
+  </data>
+  <data name="fastboot_target_partition_not_selected" xml:space="preserve">
+    <value>Целевой раздел не выбран.</value>
+  </data>
+  <data name="fastboot_unknown_partition_str0" xml:space="preserve">
+    <value>Перечисленные далее разделы для записи могут быть неизвестны:</value>
+  </data>
+  <data name="fastboot_unknown_partition_str1" xml:space="preserve">
+    <value>Это предупреждение можно отключить, установив флажок Ignore unknown partitions. Неизвестный раздел не означает, что устройство не сможет записывать данные или превратится в кирпич.</value>
+  </data>
+  <data name="fastboot_unknown_partition_str2" xml:space="preserve">
+    <value>Возможно, потребуется перезапустить режим fastbootd.</value>
+  </data>
+  <data name="fastboot_update_status" xml:space="preserve">
+    <value>Статус обновления системы</value>
+  </data>
+  <data name="fastboot_update_status_merging" xml:space="preserve">
+    <value>Объединение</value>
+  </data>
+  <data name="fastboot_update_status_none" xml:space="preserve">
+    <value>Отсутвует</value>
+  </data>
+  <data name="fastboot_update_status_snapshotted" xml:space="preserve">
+    <value>Срабатывание по моментальному снимку</value>
+  </data>
+  <data name="fastboot_vab_staging_str0" xml:space="preserve">
+    <value>Выполняется обновление системы</value>
+  </data>
+  <data name="fastboot_vab_staging_str1" xml:space="preserve">
+    <value>Устройство находится в процессе обновления системы. Принудительная отмена операции может привести к тому, что устройство станет кирпичом.</value>
+  </data>
+  <data name="fastboot_vab_staging_str2" xml:space="preserve">
+    <value>(Пожалуйста, подождите некоторое время, пока не завершится обновление системы устройства).</value>
+  </data>
+  <data name="fastboot_vab_staging_str3" xml:space="preserve">
+    <value>Желаете ли вы продолжить?</value>
+  </data>
+  <data name="fastboot_vbmeta_disable_verify" xml:space="preserve">
+    <value>Вы хотите отключить верификацию в vbmeta?</value>
+  </data>
+  <data name="fastboot_vbmeta_disable_verify_title" xml:space="preserve">
+    <value>Отключить верификацию</value>
+  </data>
+  <data name="logger" xml:space="preserve">
+    <value>Логи</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="open_source" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
+  <data name="operation_completed" xml:space="preserve">
+    <value>Операция завершена</value>
+  </data>
+  <data name="operation_not_supported" xml:space="preserve">
+    <value>Операция не поддерживается.</value>
+  </data>
+  <data name="payload_basic_properties" xml:space="preserve">
+    <value>Свойство</value>
+  </data>
+  <data name="payload_blocksize" xml:space="preserve">
+    <value>Размер блока</value>
+  </data>
+  <data name="payload_browse" xml:space="preserve">
+    <value>Выбрать</value>
+  </data>
+  <data name="payload_current_file" xml:space="preserve">
+    <value>Текущий файл: </value>
+  </data>
+  <data name="payload_data_size" xml:space="preserve">
+    <value>Размер блока данных</value>
+  </data>
+  <data name="payload_dumper" xml:space="preserve">
+    <value>Payload Dumper</value>
+  </data>
+  <data name="payload_dynamic_partition_metadata" xml:space="preserve">
+    <value>Метаданные динамических разделов</value>
+  </data>
+  <data name="payload_error_occur" xml:space="preserve">
+    <value>Ошибка.</value>
+  </data>
+  <data name="payload_extract_ignore_unknown" xml:space="preserve">
+    <value>Игнорирование неизвестных операций</value>
+  </data>
+  <data name="payload_extract_ignore_verify" xml:space="preserve">
+    <value>Игнорирование верификации</value>
+  </data>
+  <data name="payload_extract_image" xml:space="preserve">
+    <value>Распаковка образа</value>
+  </data>
+  <data name="payload_extract_incremental" xml:space="preserve">
+    <value>Инкрементное извлечение</value>
+  </data>
+  <data name="payload_extract_options" xml:space="preserve">
+    <value>Варианты извлечения</value>
+  </data>
+  <data name="payload_full_package" xml:space="preserve">
+    <value>Полный пакет</value>
+  </data>
+  <data name="payload_incremental_warning" xml:space="preserve">
+    <value>Образы не могут быть извлечены из инкрементных пакетов.</value>
+  </data>
+  <data name="payload_manifest_size" xml:space="preserve">
+    <value>Размер манифеста</value>
+  </data>
+  <data name="payload_metadata_signature" xml:space="preserve">
+    <value>Подписи метаданных (Base64)</value>
+  </data>
+  <data name="payload_metadata_signature_size" xml:space="preserve">
+    <value>Размер подписи метаданных</value>
+  </data>
+  <data name="payload_no_dynamic_metadata" xml:space="preserve">
+    <value>Отсутствие метаданных для динамических разделов</value>
+  </data>
+  <data name="payload_no_file_str" xml:space="preserve">
+    <value>Payload не обнаружен, нажмите кнопку 'Выбрать' или переместите файл сюда.</value>
+  </data>
+  <data name="payload_partitions" xml:space="preserve">
+    <value>Раздел</value>
+  </data>
+  <data name="payload_partitions_filter_by_name" xml:space="preserve">
+    <value>Фильтр по имени:</value>
+  </data>
+  <data name="payload_partitions_hash" xml:space="preserve">
+    <value>Контрольная сумма (Base64)</value>
+  </data>
+  <data name="payload_partitions_name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="payload_partitions_size" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="payload_partition_group_include" xml:space="preserve">
+    <value>Разделы, включенные в Payload: </value>
+  </data>
+  <data name="payload_partition_group_name" xml:space="preserve">
+    <value>Имя группы разделов: </value>
+  </data>
+  <data name="payload_partition_group_size" xml:space="preserve">
+    <value>Размер группы разделов: </value>
+  </data>
+  <data name="payload_property_name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="payload_property_value" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="payload_remove_file" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="payload_signature" xml:space="preserve">
+    <value>Подпись (Base64)</value>
+  </data>
+  <data name="payload_signature_size" xml:space="preserve">
+    <value>Размер подписи</value>
+  </data>
+  <data name="payload_snapshot_enabled" xml:space="preserve">
+    <value>Включена функция моментального снимка: </value>
+  </data>
+  <data name="payload_target_partition_not_selected" xml:space="preserve">
+    <value>Не выбран целевой раздел для извлечения.</value>
+  </data>
+  <data name="payload_timestamp" xml:space="preserve">
+    <value>Маркировка времени</value>
+  </data>
+  <data name="payload_unable_drop_multifile" xml:space="preserve">
+    <value>Невозможно сбросить несколько файлов.</value>
+  </data>
+  <data name="payload_unsupported_format" xml:space="preserve">
+    <value>Несовместимость форматов файлов.</value>
+  </data>
+  <data name="payload_version" xml:space="preserve">
+    <value>Версия payload</value>
+  </data>
+  <data name="program_already_running" xml:space="preserve">
+    <value>Программа уже запущена.</value>
+  </data>
+  <data name="release_at" xml:space="preserve">
+    <value>Выпущено на: www.akr-developers.com</value>
+  </data>
+  <data name="select_save_path" xml:space="preserve">
+    <value>Выберите путь для сохранения</value>
+  </data>
+  <data name="unknown" xml:space="preserve">
+    <value>Неизвестно</value>
+  </data>
+  <data name="visit_thread" xml:space="preserve">
+    <value>Форум</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+</root>
