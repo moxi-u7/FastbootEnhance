@@ -75,5 +75,25 @@ namespace FastbootEnhance
         {
             Process.Start("https://github.com/libxzr/FastbootEnhance");
         }
+
+        private void payload_partition_info_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void fastboot_show_logs_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void fastboot_info_list_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void fastboot_partition_list_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

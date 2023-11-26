@@ -220,16 +220,16 @@
     <value>Изменить размер</value>
   </data>
   <data name="fastboot_partition_is_dynamic" xml:space="preserve">
-    <value>Логический раздел</value>
+    <value>Динамический</value>
   </data>
   <data name="fastboot_partition_name" xml:space="preserve">
-    <value>Название</value>
+    <value>Имя раздела</value>
   </data>
   <data name="fastboot_partition_name_empty" xml:space="preserve">
     <value>Имя раздела пустое.</value>
   </data>
   <data name="fastboot_partition_size" xml:space="preserve">
-    <value>Размер</value>
+    <value>Размер раздела</value>
   </data>
   <data name="fastboot_partition_size_b" xml:space="preserve">
     <value>Размер (B)</value>
@@ -268,7 +268,7 @@
     <value>Отключить</value>
   </data>
   <data name="fastboot_seamless_update" xml:space="preserve">
-    <value>Присутствие поддержки бесшовных обновлений</value>
+    <value>Поддерживаются ли бесшовные обновления</value>
   </data>
   <data name="fastboot_secure_boot" xml:space="preserve">
     <value>Secure Boot</value>
@@ -379,7 +379,7 @@
     <value>Распаковка образа</value>
   </data>
   <data name="payload_extract_incremental" xml:space="preserve">
-    <value>Инкрементное извлечение</value>
+    <value>Частичное извлечение</value>
   </data>
   <data name="payload_extract_options" xml:space="preserve">
     <value>Варианты извлечения</value>
@@ -388,13 +388,13 @@
     <value>Полный пакет</value>
   </data>
   <data name="payload_incremental_warning" xml:space="preserve">
-    <value>Образы не могут быть извлечены из инкрементных пакетов.</value>
+    <value>Для извлечения образов в этом payload необходимо использовать частичное извлечение</value>
   </data>
   <data name="payload_manifest_size" xml:space="preserve">
     <value>Размер манифеста</value>
   </data>
   <data name="payload_metadata_signature" xml:space="preserve">
-    <value>Подписи метаданных (Base64)</value>
+    <value>Подпись метаданных (Base64)</value>
   </data>
   <data name="payload_metadata_signature_size" xml:space="preserve">
     <value>Размер подписи метаданных</value>
@@ -403,10 +403,10 @@
     <value>Отсутствие метаданных для динамических разделов</value>
   </data>
   <data name="payload_no_file_str" xml:space="preserve">
-    <value>Payload не обнаружен, нажмите кнопку 'Выбрать' или переместите файл сюда.</value>
+    <value>Файл 'payload.bin' не обнаружен, нажмите кнопку 'Выбрать' или переместите файл сюда.</value>
   </data>
   <data name="payload_partitions" xml:space="preserve">
-    <value>Раздел</value>
+    <value>Разделы</value>
   </data>
   <data name="payload_partitions_filter_by_name" xml:space="preserve">
     <value>Фильтр по имени:</value>
@@ -415,10 +415,10 @@
     <value>Контрольная сумма (Base64)</value>
   </data>
   <data name="payload_partitions_name" xml:space="preserve">
-    <value>Название</value>
+    <value>Имя раздела</value>
   </data>
   <data name="payload_partitions_size" xml:space="preserve">
-    <value>Размер</value>
+    <value>Размер раздела</value>
   </data>
   <data name="payload_partition_group_include" xml:space="preserve">
     <value>Разделы, включенные в Payload: </value>
@@ -451,7 +451,7 @@
     <value>Не выбран целевой раздел для извлечения.</value>
   </data>
   <data name="payload_timestamp" xml:space="preserve">
-    <value>Маркировка времени</value>
+    <value>Время сборки payload.bin</value>
   </data>
   <data name="payload_unable_drop_multifile" xml:space="preserve">
     <value>Невозможно сбросить несколько файлов.</value>

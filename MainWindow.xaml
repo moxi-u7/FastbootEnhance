@@ -42,45 +42,54 @@
                         <TabControl>
                             <TabItem Header="{x:Static props:Resources.fastboot_basic_prop}">
                                 <Grid>
-                                    <ListView x:Name="fastboot_info_list" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="23*"/>
+                                        <ColumnDefinition Width="35*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ListView x:Name="fastboot_info_list" Grid.ColumnSpan="2" SelectionChanged="fastboot_info_list_SelectionChanged" HorizontalAlignment="Left"
+                                              Width="638" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.494,0.461" >
                                         <ListView.View>
                                             <GridView>
-                                                <GridViewColumn Header="{x:Static props:Resources.fastboot_prop_name}" Width="150" DisplayMemberBinding="{Binding name}"/>
+                                                <GridViewColumn Header="{x:Static props:Resources.fastboot_prop_name}" Width="300" DisplayMemberBinding="{Binding name}"/>
                                                 <GridViewColumn Header="{x:Static props:Resources.fastboot_prop_value}" Width="150" DisplayMemberBinding="{Binding value}"/>
                                             </GridView>
                                         </ListView.View>
                                     </ListView>
                                 </Grid>
                             </TabItem>
-                            <TabItem Header="{x:Static props:Resources.fastboot_partition_table}">
+                            <TabItem Header="{x:Static props:Resources.fastboot_partition_table}" Height="20" VerticalAlignment="Bottom">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="2*"></ColumnDefinition>
-                                        <ColumnDefinition Width="5*"></ColumnDefinition>
-                                        <ColumnDefinition Width="200"></ColumnDefinition>
+                                        <ColumnDefinition Width="112*"></ColumnDefinition>
+                                        <ColumnDefinition Width="13*"/>
+                                        <ColumnDefinition Width="292*"></ColumnDefinition>
+                                        <ColumnDefinition Width="221"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
                                         <RowDefinition></RowDefinition>
                                         <RowDefinition Height="6*"></RowDefinition>
                                     </Grid.RowDefinitions>
-                                    <Label Content="{x:Static props:Resources.fastboot_filter_by_partition_name}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-                                    <TextBox Height="20" Margin="10 0 20 0" x:Name="fastboot_partition_name_textbox" Grid.Column="1"/>
-                                    <ListView x:Name="fastboot_partition_list" Grid.Row="1" Grid.ColumnSpan="2">
+                                    <Label Content="{x:Static props:Resources.fastboot_filter_by_partition_name}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="3" Width="156" Height="26"/>
+                                    <TextBox Margin="36,12,20,12" x:Name="fastboot_partition_name_textbox" Grid.Column="2"/>
+                                    <ListView x:Name="fastboot_partition_list" Grid.ColumnSpan="3" SelectionChanged="fastboot_partition_list_SelectionChanged" Margin="0,44,20,0" Grid.RowSpan="2">
                                         <ListView.View>
                                             <GridView>
-                                                <GridViewColumn Header="{x:Static props:Resources.fastboot_partition_name}" Width="100" DisplayMemberBinding="{Binding name}"/>
+                                                <GridViewColumn Header="{x:Static props:Resources.fastboot_partition_name}" Width="150" DisplayMemberBinding="{Binding name}"/>
                                                 <GridViewColumn Header="{x:Static props:Resources.fastboot_partition_size}" Width="100" DisplayMemberBinding="{Binding size}"/>
                                                 <GridViewColumn Header="{x:Static props:Resources.fastboot_partition_is_dynamic}" Width="100" DisplayMemberBinding="{Binding is_logical}"/>
                                             </GridView>
                                         </ListView.View>
                                     </ListView>
-                                    <Grid Grid.Column="2" Grid.Row="0" Grid.RowSpan="2">
+                                    <Grid Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Margin="277,0,0,0" Grid.ColumnSpan="2">
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="5*"></RowDefinition>
-                                            <RowDefinition Height="0.7*"></RowDefinition>
-                                            <RowDefinition Height="0.7*"></RowDefinition>
+                                            <RowDefinition Height="130*"></RowDefinition>
+                                            <RowDefinition Height="32*"/>
+                                            <RowDefinition Height="78*"/>
+                                            <RowDefinition Height="11*"></RowDefinition>
+                                            <RowDefinition Height="23.009"/>
+                                            <RowDefinition Height="34*"></RowDefinition>
                                         </Grid.RowDefinitions>
-                                        <GroupBox x:Name="fastboot_single_part_op" Margin="10 0 10 0" Header="{x:Static props:Resources.fastboot_partition_action}">
+                                        <GroupBox x:Name="fastboot_single_part_op" Margin="10,0,10,1" Header="{x:Static props:Resources.fastboot_partition_action}" Grid.RowSpan="3">
                                             <Grid>
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition></RowDefinition>
@@ -96,8 +105,8 @@
                                                 <Button x:Name="fastboot_logical_resize" Margin="5,5,5,5" Content="{x:Static props:Resources.fastboot_partition_action_resize}" Grid.Row="4" Grid.ColumnSpan="2"/>
                                             </Grid>
                                         </GroupBox>
-                                        <CheckBox x:Name="fastboot_show_logs" Content="{x:Static props:Resources.fastboot_show_logs}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                                        <CheckBox x:Name="ignore_unknown_part" Content="{x:Static props:Resources.fastboot_ignore_unknown}" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,5,5,5"/>
+                                        <CheckBox x:Name="fastboot_show_logs" Content="{x:Static props:Resources.fastboot_show_logs}" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Left" Checked="fastboot_show_logs_Checked" Grid.RowSpan="2" Height="15" Width="131" Margin="10,11,0,0"/>
+                                        <CheckBox x:Name="ignore_unknown_part" Content="{x:Static props:Resources.fastboot_ignore_unknown}" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Height="15" Width="229" Margin="10,0,0,0"/>
                                     </Grid>
                                 </Grid>
                             </TabItem>
@@ -130,11 +139,11 @@
                                     <ColumnDefinition></ColumnDefinition>
 
                                 </Grid.ColumnDefinitions>
-                                <Button x:Name="fastboot_reboot_d" Margin="5,5,5,5" Content="Reboot to Bootloader" Grid.Column="0"/>
-                                <Button x:Name="fastboot_ab_switch" Margin="5,5,5,5" Content="切换分区" Grid.Column="1"/>
-                                <Button x:Name="fastboot_flash_payload" Margin="5,5,5,5" Content="{x:Static props:Resources.fastboot_flash_payload}" Grid.Column="2"/>
-                                <Button x:Name="fastboot_cancel_update" Margin="5,5,5,5" Content="{x:Static props:Resources.fastboot_cancel_update}" Grid.Column="3"/>
-                                
+                                <Button x:Name="fastboot_reboot_d" Margin="5,5,0,5" Content="Reboot to Bootloader" Grid.Column="0"/>
+                                <Button x:Name="fastboot_ab_switch" Margin="5,5,0,5" Content="切换分区" Grid.Column="1"/>
+                                <Button x:Name="fastboot_flash_payload" Margin="5,5,0,5" Content="{x:Static props:Resources.fastboot_flash_payload}" Grid.Column="2"/>
+                                <Button x:Name="fastboot_cancel_update" Margin="5,5,0,5" Content="{x:Static props:Resources.fastboot_cancel_update}" Grid.Column="3"/>
+
                             </Grid>
                             <Grid Grid.Row="1">
                                 <Grid.ColumnDefinitions>
@@ -144,10 +153,11 @@
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <Label VerticalAlignment="Center" x:Name="fastboot_cur_device" Content="{x:Static props:Resources.fastboot_current_device}" Grid.Column="0"/>
-                                <Button x:Name="fastboot_remove" Margin="5 5 5 5" Content="{x:Static props:Resources.fastboot_remove_device}" Grid.Column="1"/>
-                                <Button x:Name="fastboot_reboot_system" Margin="5 5 5 5" Content="{x:Static props:Resources.fastboot_reboot_system}" Grid.Column="2"/>
-                                <Button x:Name="fastboot_reboot_recovery" Margin="5 5 5 5" Content="{x:Static props:Resources.fastboot_reboot_recovery}" Grid.Column="3"/>
+                                <Button x:Name="fastboot_remove" Margin="208,5,27,5" Content="{x:Static props:Resources.fastboot_remove_device}" Grid.ColumnSpan="2"/>
+                                <Button x:Name="fastboot_reboot_system" Margin="121,5,16,5" Content="{x:Static props:Resources.fastboot_reboot_system}" Grid.Column="1" Grid.ColumnSpan="2"/>
+                                <Button x:Name="fastboot_reboot_recovery" Margin="132,5,0,5" Content="{x:Static props:Resources.fastboot_reboot_recovery}" Grid.Column="2" Grid.ColumnSpan="2"/>
                             </Grid>
+
                         </Grid>
                     </Grid>
                 </Grid>
@@ -186,17 +196,19 @@
                             <TabItem Header="{x:Static props:Resources.payload_partitions}">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="2*"></ColumnDefinition>
-                                        <ColumnDefinition Width="4*"></ColumnDefinition>
-                                        <ColumnDefinition Width="200"></ColumnDefinition>
+                                        <ColumnDefinition Width="9*"></ColumnDefinition>
+                                        <ColumnDefinition Width="67*"/>
+                                        <ColumnDefinition Width="108*"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition></RowDefinition>
-                                        <RowDefinition Height="6*"></RowDefinition>
+                                        <RowDefinition Height="44*"></RowDefinition>
+                                        <RowDefinition Height="133*"></RowDefinition>
+                                        <RowDefinition Height="131*"/>
                                     </Grid.RowDefinitions>
-                                    <Label Content="{x:Static props:Resources.payload_partitions_filter_by_name}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-                                    <TextBox x:Name="payload_partition_name_textbox" Height="20" Margin="10 0 20 0" Grid.Column="1"/>
-                                    <ListView x:Name="payload_partition_info" Grid.Row="1" Grid.ColumnSpan="2">
+                                    <Label Content="{x:Static props:Resources.payload_partitions_filter_by_name}" HorizontalAlignment="Left" VerticalAlignment="Center" Height="26" Margin="19,0,0,0" Width="109" Grid.Column="1"/>
+                                    <TextBox x:Name="payload_partition_name_textbox" Margin="10,12,20,12" Grid.Column="2"/>
+                                    <ListView x:Name="payload_partition_info" Grid.ColumnSpan="3" Margin="0,44,0,0" Grid.RowSpan="3" SelectionChanged="payload_partition_info_SelectionChanged" d:ItemsSource="{d:SampleData ItemCount=5}">
                                         <ListView.View>
                                             <GridView>
                                                 <GridViewColumn Header="{x:Static props:Resources.payload_partitions_name}" Width="120" DisplayMemberBinding="{Binding name}"/>
@@ -205,17 +217,19 @@
                                             </GridView>
                                         </ListView.View>
                                     </ListView>
-                                    <Grid Grid.Column="2" Grid.Row="1">
+                                    <Grid Grid.Column="3" Margin="1,44,0,0" Grid.RowSpan="3">
                                         <Grid.RowDefinitions>
-                                            <RowDefinition></RowDefinition>
-                                            <RowDefinition Height="5*"></RowDefinition>
+                                            <RowDefinition Height="44*"></RowDefinition>
+                                            <RowDefinition Height="17*"></RowDefinition>
+                                            <RowDefinition Height="97*"/>
+                                            <RowDefinition Height="106*"/>
                                         </Grid.RowDefinitions>
-                                        <Button x:Name="payload_extract" Content="{x:Static props:Resources.payload_extract_image}" Margin="5" />
-                                        <GroupBox x:Name="payload_extract_options" Header="{x:Static props:Resources.payload_extract_options}" Grid.Row="1" Margin="4">
-                                            <Grid>
+                                        <Button x:Name="payload_extract" Content="{x:Static props:Resources.payload_extract_image}" Margin="5,5,5,5" />
+                                        <GroupBox x:Name="payload_extract_options" Header="{x:Static props:Resources.payload_extract_options}" Grid.Row="1" Margin="4,4,4,4" Grid.RowSpan="3">
+                                            <Grid Margin="10,0,0,0">
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition></RowDefinition>
-                                                    <RowDefinition></RowDefinition>
+                                                    <RowDefinition Height="63.047"></RowDefinition>
                                                     <RowDefinition></RowDefinition>
                                                 </Grid.RowDefinitions>
                                                 <CheckBox x:Name="payload_ignore_delta" Content="{x:Static props:Resources.payload_extract_incremental}" VerticalAlignment="Center"/>
