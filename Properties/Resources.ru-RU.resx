@@ -142,19 +142,19 @@
     <value>Базовая информация</value>
   </data>
   <data name="fastboot_cancel_update" xml:space="preserve">
-    <value>Отменить ожидаемое обновление</value>
+    <value>Отменить ожидаемое OTA обновление</value>
   </data>
   <data name="fastboot_choose_device" xml:space="preserve">
     <value>Выберите устройство:</value>
   </data>
   <data name="fastboot_cow_exist_str0" xml:space="preserve">
-    <value>Имеются виртуальные временные разделы A/B</value>
+    <value>Существуют виртуальные временные разделы A/B</value>
   </data>
   <data name="fastboot_cow_exist_str1" xml:space="preserve">
-    <value>Поскольку в устройстве существуют раздел другого слота, созданные при обновлении виртуального A/B, принудительное продолжение работы может привести к тому, что устройство превратится в "кирпич" из-за недостаточного места в суперразделе</value>
+    <value>Временные разделы, созданные во время обновления системы c виртуальными динамическими слотами A/B уже существуют на устройстве, поэтому принудительное продолжение прошивки может привести к сбою из-за нехватки места в суперразделе и, как следствие, к выходу устройства из строя.</value>
   </data>
   <data name="fastboot_cow_exist_str2" xml:space="preserve">
-    <value>(Устранить это предупреждение можно, удалив вручную временный раздел заканчивающийся на 'COW', если виртуальный A/B не обновляется).</value>
+    <value>(Вы можете вручную удалить временные разделы заканчивающиеся на "cow", чтобы устранить это предупреждение, если обновление с виртуальными слотами A/B не выполняется).</value>
   </data>
   <data name="fastboot_cow_exist_str3" xml:space="preserve">
     <value>Вы хотите продолжить?</value>
@@ -298,13 +298,13 @@
     <value>Возможно, потребуется перезапустить режим fastbootd.</value>
   </data>
   <data name="fastboot_update_status" xml:space="preserve">
-    <value>Статус обновления системы</value>
+    <value>OTA обновление</value>
   </data>
   <data name="fastboot_update_status_merging" xml:space="preserve">
-    <value>Объединение</value>
+    <value>Слияние слотов</value>
   </data>
   <data name="fastboot_update_status_none" xml:space="preserve">
-    <value>Отсутвует</value>
+    <value>Не выполняется</value>
   </data>
   <data name="fastboot_update_status_snapshotted" xml:space="preserve">
     <value>Срабатывание по моментальному снимку</value>
@@ -313,16 +313,16 @@
     <value>Выполняется обновление системы</value>
   </data>
   <data name="fastboot_vab_staging_str1" xml:space="preserve">
-    <value>Устройство находится в процессе обновления системы. Принудительная отмена операции может привести к тому, что устройство станет кирпичом.</value>
+    <value>Устройство находится в процессе обновления системы, принудительное выполнение операции может привести к поломке устройства</value>
   </data>
   <data name="fastboot_vab_staging_str2" xml:space="preserve">
-    <value>(Пожалуйста, подождите некоторое время, пока не завершится обновление системы устройства).</value>
+    <value>Вы можете перезагрузить устройство и подождать некоторое время, пока не завершится процесс обновления</value>
   </data>
   <data name="fastboot_vab_staging_str3" xml:space="preserve">
     <value>Желаете ли вы продолжить?</value>
   </data>
   <data name="fastboot_vbmeta_disable_verify" xml:space="preserve">
-    <value>Вы хотите отключить верификацию в vbmeta?</value>
+    <value>Вы хотите отключить верификацию vbmeta?</value>
   </data>
   <data name="fastboot_vbmeta_disable_verify_title" xml:space="preserve">
     <value>Отключить верификацию</value>
@@ -346,7 +346,7 @@
     <value>Операция не поддерживается.</value>
   </data>
   <data name="payload_basic_properties" xml:space="preserve">
-    <value>Свойство</value>
+    <value>Свойства</value>
   </data>
   <data name="payload_blocksize" xml:space="preserve">
     <value>Размер блока</value>
@@ -400,7 +400,7 @@
     <value>Размер подписи метаданных</value>
   </data>
   <data name="payload_no_dynamic_metadata" xml:space="preserve">
-    <value>Отсутствие метаданных для динамических разделов</value>
+    <value>Отсутствие метаданных динамических разделов</value>
   </data>
   <data name="payload_no_file_str" xml:space="preserve">
     <value>Файл 'payload.bin' не обнаружен, нажмите кнопку 'Выбрать' или переместите файл сюда.</value>
@@ -454,10 +454,10 @@
     <value>Время сборки payload.bin</value>
   </data>
   <data name="payload_unable_drop_multifile" xml:space="preserve">
-    <value>Невозможно сбросить несколько файлов.</value>
+    <value>Невозможно перебросить несколько файлов.</value>
   </data>
   <data name="payload_unsupported_format" xml:space="preserve">
-    <value>Несовместимость форматов файлов.</value>
+    <value>Несовместимый формат файла</value>
   </data>
   <data name="payload_version" xml:space="preserve">
     <value>Версия payload</value>
