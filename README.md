@@ -23,11 +23,11 @@
 
 ## Usage
 
-- Make sure `.NET Framework 4.5+` is supported
+- Make sure `.NET Framework 4.8+` is supported
 
-- Download `Release.zip` from [Github Releases](https://github.com/xzr467706992/FastbootEnhance/releases)
-- Unzip
-- Click `FastbootEnhance.exe`
+- Download `FastbootEnhance.exe` from [Github Releases](https://github.com/MisterZtr/FastbootEnhance/releases)
+- Follow the installer instructions
+- Launch the installed program
 
 ## Note
 
