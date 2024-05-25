@@ -566,7 +566,7 @@ namespace FastbootEnhance
                     }
                     new Thread(new ParameterizedThreadStart(step_cmd_runner_err))
                 .Start(new StepCmdRunnerParam("flash " + ext_arg + " \"" + target + "\" \"" + path + "\"", -1, true));
-                }), "Image File|*.img;*.image");
+                }), "Image File|*.img;*.image;*.bin");
             };
 
             MainWindow.THIS.fastboot_erase.Click += delegate
