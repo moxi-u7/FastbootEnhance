@@ -68,12 +68,12 @@ namespace FastbootEnhance
 
         private void Thread_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://www.akr-developers.com/d/506");
+            Process.Start("https://github.com/MisterZtr/FastbootEnhance/releases");
         }
 
         private void OSS_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://github.com/libxzr/FastbootEnhance");
+            Process.Start("https://github.com/MisterZtr/FastbootEnhance");
         }
 
         private void payload_partition_info_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)

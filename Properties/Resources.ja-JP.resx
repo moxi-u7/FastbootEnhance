@@ -124,7 +124,7 @@
     <value>Fastboot Enhance</value>
   </data>
   <data name="author" xml:space="preserve">
-    <value>開発者: LibXZR @ akr-developers.com</value>
+    <value>開発者: MisterZtr</value>
   </data>
   <data name="disabled" xml:space="preserve">
     <value>無効</value>
@@ -464,9 +464,6 @@
   </data>
   <data name="program_already_running" xml:space="preserve">
     <value>プログラムは既に実行中です。</value>
-  </data>
-  <data name="release_at" xml:space="preserve">
-    <value>リリース先: www.akr-developers.com</value>
   </data>
   <data name="select_save_path" xml:space="preserve">
     <value>保存するパスを選択</value>

@@ -121,7 +121,7 @@
     <value>关于</value>
   </data>
   <data name="author" xml:space="preserve">
-    <value>作者：LibXZR @ akr-developers.com</value>
+    <value>作者：MisterZtr</value>
   </data>
   <data name="disabled" xml:space="preserve">
     <value>未启用</value>
@@ -461,9 +461,6 @@
   </data>
   <data name="program_already_running" xml:space="preserve">
     <value>程序已经在运行</value>
-  </data>
-  <data name="release_at" xml:space="preserve">
-    <value>发布于 www.akr-developers.com</value>
   </data>
   <data name="select_save_path" xml:space="preserve">
     <value>选择保存路径</value>

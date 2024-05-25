@@ -321,7 +321,6 @@
                         <Image Height="128" Width="128" Source="big_icon.png" Canvas.Left="38" Canvas.Top="50"/>
                         <Label Content="Fastboot Enhance" Canvas.Left="211" Canvas.Top="53" FontSize="20"/>
                         <Label Content="{x:Static props:Resources.author}" Canvas.Left="192" Canvas.Top="94"/>
-                        <Label Content="{x:Static props:Resources.release_at}" Canvas.Left="211" Canvas.Top="118"/>
                         <Button Content="{x:Static props:Resources.visit_thread}" Canvas.Left="211" Canvas.Top="149" Width="75" Click="Thread_Click"/>
                         <Button Content="{x:Static props:Resources.open_source}" Canvas.Left="317" Canvas.Top="149" Width="75" Click="OSS_Click"/>
                     </Canvas>

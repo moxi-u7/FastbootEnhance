@@ -124,7 +124,7 @@
     <value>Fastboot Enhance</value>
   </data>
   <data name="author" xml:space="preserve">
-    <value>Author: LibXZR @ akr-developers.com</value>
+    <value>Author: MisterZtr</value>
   </data>
   <data name="disabled" xml:space="preserve">
     <value>Disabled</value>
@@ -464,9 +464,6 @@
   </data>
   <data name="program_already_running" xml:space="preserve">
     <value>The program is already running</value>
-  </data>
-  <data name="release_at" xml:space="preserve">
-    <value>Release at www.akr-developers.com</value>
   </data>
   <data name="select_save_path" xml:space="preserve">
     <value>Select the path to save</value>

@@ -124,7 +124,7 @@
     <value>고급 Fastboot</value>
   </data>
   <data name="author" xml:space="preserve">
-    <value>제작자: LibXZR @ akr-developers.com</value>
+    <value>제작자: MisterZtr</value>
   </data>
   <data name="disabled" xml:space="preserve">
     <value>꺼짐</value>
@@ -464,9 +464,6 @@
   </data>
   <data name="program_already_running" xml:space="preserve">
     <value>이미 실행중입니다.</value>
-  </data>
-  <data name="release_at" xml:space="preserve">
-    <value>새로운 정보를 보시려면 www.akr-developers.com 을 방문하세요.</value>
   </data>
   <data name="select_save_path" xml:space="preserve">
     <value>저장할 위치를 선택하세요</value>

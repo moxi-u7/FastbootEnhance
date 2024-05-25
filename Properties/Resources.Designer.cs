@@ -79,7 +79,7 @@ namespace FastbootEnhance.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Author: LibXZR @ akr-developers.com.
+        ///   Ищет локализованную строку, похожую на Author: MisterZtr.
         /// </summary>
         public static string author {
             get {
@@ -1101,15 +1101,6 @@ namespace FastbootEnhance.Properties {
         public static string program_already_running {
             get {
                 return ResourceManager.GetString("program_already_running", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Release at www.akr-developers.com.
-        /// </summary>
-        public static string release_at {
-            get {
-                return ResourceManager.GetString("release_at", resourceCulture);
             }
         }
         
